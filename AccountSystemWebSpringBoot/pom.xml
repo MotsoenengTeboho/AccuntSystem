@@ -22,23 +22,24 @@
     <dependencies>
         <dependency>
             <groupId>za.ac.nwu.as</groupId>
-            <artifactId>AccountSystemLogic</artifactId>
+            <artifactId>AccountSystemDomain</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>za.ac.nwu.as</groupId>
-            <artifactId>AccountSystemDomain</artifactId>
+            <artifactId>AccountSystemLogic</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.9</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
 
         <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
