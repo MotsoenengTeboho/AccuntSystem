@@ -1,0 +1,5 @@
+za\ac\nwu\translator\MemberTypeTranslator.class
+za\ac\nwu\translator\CreateMemberTypeFlow.class
+za\ac\nwu\translator\config\TranslatorConfig.class
+za\ac\nwu\translator\Impl\CreateMemberTypeFlowImpl.class
+za\ac\nwu\translator\Impl\MemberTypeTranslatorImpl.class
