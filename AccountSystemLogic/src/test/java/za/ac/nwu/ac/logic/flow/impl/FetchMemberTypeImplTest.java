@@ -1,24 +1,26 @@
 package za.ac.nwu.ac.logic.flow.impl;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-class FetchMemberTypeImplTest {
-    private FetchMemberTypeImpl testClass;
+import static org.junit.Assert.assertTrue;
 
-    @BeforeEach
-    void setUp() {
-        testClass = new FetchMemberTypeImpl(null);
+public class FetchMemberTypeImplTest {
+    private FetchMemberTypeImpl classToTest;
+
+    @Before
+    public void setUp() throws Exception {
+        classToTest = new FetchMemberTypeImpl(null);
     }
 
-    @AfterEach
-    void tearDown() {
-        testClass = null;
+    @After
+    public void tearDown() throws Exception {
+        classToTest = null;
     }
 
     @Test
-    void methodToTest() {
-        assert(testClass.methodToTest());
+    public void methodToTest() {
+        assertTrue(classToTest.methodToTest());
     }
 }
