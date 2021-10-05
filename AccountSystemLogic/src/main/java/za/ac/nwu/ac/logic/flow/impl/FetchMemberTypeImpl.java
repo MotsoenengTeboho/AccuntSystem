@@ -19,8 +19,15 @@ public class FetchMemberTypeImpl implements FetchMemberTypeFlow{
         this.memberTypeTranslator = memberTypeTranslator;
     }
 
-
     public List<MemberTypeDto> getAllMemberTypes() {
         return memberTypeTranslator.getAllMemberTypes();
+    }
+
+    //public MemberTypeDto getMemberTypeByMnemonic(String mnemonic){
+    //    return memberTypeTranslator.getMemberTypeByMnemonic(mnemonic);
+    //}
+
+    public boolean methodToTest(){
+        return true;
     }
 }
