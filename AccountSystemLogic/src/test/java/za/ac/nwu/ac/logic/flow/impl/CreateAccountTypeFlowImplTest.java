@@ -10,7 +10,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import za.ac.nwu.ac.domain.dto.MemberTypeDto;
 import za.ac.nwu.translator.MemberTypeTranslator;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
