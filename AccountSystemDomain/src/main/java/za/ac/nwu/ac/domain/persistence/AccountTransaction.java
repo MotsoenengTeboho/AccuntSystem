@@ -12,6 +12,7 @@ public class AccountTransaction{
     private LocalDate date;
     private Long accountID;
     private Long memberID;
+    private Long transactionID;
 
     @ManyToOne
     @JoinColumn(name = "account_type_ID")
@@ -21,12 +22,13 @@ public class AccountTransaction{
 
     }
 
-    public AccountTransaction(Long accountID, MemberType memberType, Long memberID, Long totalAmount, LocalDate date){
+    public AccountTransaction(Long accountID, MemberType memberType, Long memberID, Long totalAmount, LocalDate date, Long transactionID){
         this.accountID = accountID;
         this.memberType = memberType;
         this.memberID = memberID;
         this.totalAmount = totalAmount;
         this.date = date;
+        this.transactionID = transactionID;
     }
 
     @Id
@@ -44,6 +46,10 @@ public class AccountTransaction{
 
     public LocalDate getDate() {
         return date;
+    }
+
+    public Long getTransactionID(){
+        return transactionID;
     }
 
     public void setDate(LocalDate date) {
@@ -68,5 +74,22 @@ public class AccountTransaction{
 
     public void setMemberType(MemberType memberType) {
         this.memberType = memberType;
+    }
+
+    public void setTransactionID(Long transactionID){
+        this.transactionID = transactionID;
+    }
+
+
+    @Override
+    public String toString() {
+        return "AccountTransaction{" +
+                "totalAmount=" + totalAmount +
+                ", date=" + date +
+                ", accountID=" + accountID +
+                ", memberID=" + memberID +
+                ", transactionID=" + transactionID +
+                ", memberType=" + memberType +
+                '}';
     }
 }
